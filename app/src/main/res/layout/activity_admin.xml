@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bb6"
+android:padding="16dp"
+tools:context="com.hapy.login.Upload">
+
+<Button
+    android:id="@+id/button_choose_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Choose file" />
+
+
+<EditText
+    android:id="@+id/edit_text_file_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_toEndOf="@+id/button_choose_image"
+    android:hint="Enter file name" />
+
+<ImageView
+    android:id="@+id/image_view"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="110dp" />
+
+<ProgressBar
+    android:id="@+id/progress_bar"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="415dp" />
+
+<Button
+    android:id="@+id/button_upload"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/progress_bar"
+    android:layout_centerHorizontal="true"
+    android:text="Upload" />
+
+<TextView
+    android:id="@+id/text_view_show_uploads"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/button_upload"
+    android:layout_alignTop="@+id/button_upload"
+    android:layout_marginStart="25dp"
+    android:layout_toEndOf="@+id/button_upload"
+    android:gravity="center"
+    android:text="Show Uploads"
+    android:textSize="16sp" />
+
+<Spinner
+    android:id="@+id/spinner"
+    android:layout_width="145dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="65dp" />
+
+<EditText
+    android:id="@+id/edit_text_file_category"
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="185dp"
+    android:layout_marginTop="65dp"
+    android:hint="Amount" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hapy.login">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SignUp"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainPageDrawer"
+            android:label="@string/title_activity_main_page_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Upload"
+            android:parentActivityName=".MainPageDrawer" />
+        <activity
+            android:name=".Recent"
+            android:parentActivityName=".MainPageDrawer" />
+        <activity
+            android:name=".Wishlist"
+            android:parentActivityName=".MainPageDrawer" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImagesActivity"
+            android:parentActivityName=".Upload" />
+        <activity
+            android:name=".BTechActivity"
+            android:parentActivityName=".MainPageDrawer" />
+        <activity
+            android:name=".MedicalActivity"
+            android:parentActivityName=".MainPageDrawer" />
+        <activity
+            android:name=".CAActivity"
+            android:parentActivityName=".MainPageDrawer" />
+        <activity
+            android:name=".MCAActivity"
+            android:parentActivityName=".MainPageDrawer" />
+        <activity
+            android:name=".LLBActivity"
+            android:parentActivityName=".MainPageDrawer" />
+        <activity android:name=".AdminActivity" />
+        <activity
+            android:name=".AdminImagesActivity"
+            android:parentActivityName=".AdminActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".CardView" />
+        <activity android:name=".Cart"
+            android:parentActivityName=".MainPageDrawer"/>
+        <activity android:name=".Address"
+            android:parentActivityName=".Cart"></activity>
+    </application>
+
+</manifest>

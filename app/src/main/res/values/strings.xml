@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">KollegeKart
+    </string>
+    <string name="title_activity_main_page_drawer"><font fgcolor="#080808"><i>KollegeKart</i></font></string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>B.Tech</item>
+        <item>Medical</item>
+        <item>CA</item>
+        <item>MCA</item>
+        <item>LLB</item>
+    </string-array>
+</resources>
